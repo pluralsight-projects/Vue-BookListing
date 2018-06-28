@@ -7,12 +7,12 @@
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
-    "test:module1": "NODE_ENV=test mocha 'test/unit/mocha/part1/*.spec.js' || true",
-    "test:module2": "NODE_ENV=test mocha 'test/unit/mocha/part2/*.spec.js' || true",
-    "test:module3": "NODE_ENV=test mocha 'test/unit/mocha/part3/*.spec.js' || true",
-    "test:module4": "NODE_ENV=test mocha 'test/unit/mocha/part4/*.spec.js' || true",
-    "test:module5": "NODE_ENV=test mocha 'test/unit/mocha/part5/*.spec.js' || true",
-    "test": "NODE_ENV=test mocha 'test/unit/mocha/**/*.spec.js' || true",
+    "test:module1": "cross-env NODE_ENV=test mocha 'test/unit/mocha/part1/*.spec.js' || true",
+    "test:module2": "cross-env NODE_ENV=test mocha 'test/unit/mocha/part2/*.spec.js' || true",
+    "test:module3": "cross-env NODE_ENV=test mocha 'test/unit/mocha/part3/*.spec.js' || true",
+    "test:module4": "cross-env NODE_ENV=test mocha 'test/unit/mocha/part4/*.spec.js' || true",
+    "test:module5": "cross-env NODE_ENV=test mocha 'test/unit/mocha/part5/*.spec.js' || true",
+    "test": "cross-env NODE_ENV=test mocha 'test/unit/mocha/**/*.spec.js' || true",
     "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
     "build": "node build/build.js"
   },
