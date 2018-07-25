@@ -1,3 +1,3 @@
-Vue.component('bookList', {
-template: '<script></script>'
-});
+<template></template>
+<script></script>
+<style></style>
