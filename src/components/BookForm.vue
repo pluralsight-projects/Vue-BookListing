@@ -16,7 +16,7 @@
             bookTitle: '',
             bookAuthor: ''
         }
-    },
+    }
 </script>
 
 <style >
