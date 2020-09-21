@@ -19,7 +19,7 @@
 
     methods: {
         bookSubmit(bookTitle,bookAuthor) {
-this.$emit('addbook', booktTitle, bookAuthor)
+this.$emit('addBook', bookTitle, bookAuthor);
             
         }
     },

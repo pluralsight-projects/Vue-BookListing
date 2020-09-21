@@ -34,7 +34,7 @@ components: {
   },
 
   methods: {
-      appendbook(bookTitle,bookAuthor) {
+      appendBook(bookTitle,bookAuthor) {
           this.books.push({title: bookTitle, author: bookAuthor})
           
       }
