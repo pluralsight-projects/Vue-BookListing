@@ -36,7 +36,9 @@ describe('BookForm.vue', () => {
     assert(results != null, 'The BookForm template does not contain a `form` tag');
     assert(results.length > 0, 'The BookForm template does not contain a `form` tag');
 
-    if (results.outerHTML.includes('@submit.prevent')) {
+    if (results.innerHTML.includes('submit.prevent')) {
+      assert(false, 'You need to add the submit event to the form tag.');
+    } else if (results.outerHTML.includes('@submit.prevent')) {
       
     } else if (results.outerHTML.includes('submit.prevent')) {
       if (results.outerHTML.includes(' :submit.prevent')) {
